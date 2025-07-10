@@ -33,3 +33,14 @@ footer {
   background: #ddd;
   font-size: 14px;
 }
+.santo {
+  background: #f8f8f8;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.santo img {
+  width: 150px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
