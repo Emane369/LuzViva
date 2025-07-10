@@ -1,0 +1,38 @@
+{
+  "es": {
+    "esperanza": [
+      {
+        "texto": "El Señor es mi pastor, nada me falta.",
+        "referencia": "Salmo 23:1"
+      },
+      {
+        "texto": "Aunque ande en valle de sombra, no temeré mal alguno.",
+        "referencia": "Salmo 23:4"
+      }
+    ],
+    "fe": [
+      {
+        "texto": "Porque por fe andamos, no por vista.",
+        "referencia": "2 Corintios 5:7"
+      }
+    ]
+  },
+  "en": {
+    "hope": [
+      {
+        "texto": "The Lord is my shepherd, I shall not want.",
+        "referencia": "Psalm 23:1"
+      },
+      {
+        "texto": "Even though I walk through the valley of the shadow of death, I will fear no evil.",
+        "referencia": "Psalm 23:4"
+      }
+    ],
+    "faith": [
+      {
+        "texto": "For we walk by faith, not by sight.",
+        "referencia": "2 Corinthians 5:7"
+      }
+    ]
+  }
+}
