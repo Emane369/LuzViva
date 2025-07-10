@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuzViva — Versículo y Oración del Día</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="bienvenida"></h1>
+    <div class="idioma-selector">
+      <button onclick="cambiarIdioma('es')">🇲🇽 Español</button>
+      <button onclick="cambiarIdioma('en')">🇺🇸 English</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="versiculo">
+      <h2 id="titulo_versiculo"></h2>
+      <p id="contenido_versiculo"></p>
+      <span id="referencia_versiculo"></span>
+    </section>
+
+    <section class="oracion">
+      <h2 id="titulo_oracion"></h2>
+      <p id="contenido_oracion"></p>
+      <audio controls>
+        <source src="assets/audio/oracion-demo.mp3" type="audio/mpeg" />
+        Tu navegador no admite audio.
+      </audio>
+    </section>
+  </main>
+
+  <footer>
+    <p>LuzViva © 2025 — Proyecto de fe digital</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
