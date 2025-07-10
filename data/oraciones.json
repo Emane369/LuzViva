@@ -1,0 +1,14 @@
+{
+  "es": {
+    "gratitud": {
+      "texto": "Señor, gracias por este nuevo día. Te ofrezco mis acciones como semilla de paz.",
+      "audio": "assets/audio/oracion-gratitud-es.mp3"
+    }
+  },
+  "en": {
+    "gratitude": {
+      "texto": "Lord, thank you for this new day. May my actions be seeds of peace.",
+      "audio": "assets/audio/oracion-gratitude-en.mp3"
+    }
+  }
+}

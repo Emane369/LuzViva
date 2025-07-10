@@ -9,12 +9,6 @@
         "texto": "Aunque ande en valle de sombra, no temeré mal alguno.",
         "referencia": "Salmo 23:4"
       }
-    ],
-    "fe": [
-      {
-        "texto": "Porque por fe andamos, no por vista.",
-        "referencia": "2 Corintios 5:7"
-      }
     ]
   },
   "en": {
@@ -26,12 +20,6 @@
       {
         "texto": "Even though I walk through the valley of the shadow of death, I will fear no evil.",
         "referencia": "Psalm 23:4"
-      }
-    ],
-    "faith": [
-      {
-        "texto": "For we walk by faith, not by sight.",
-        "referencia": "2 Corinthians 5:7"
       }
     ]
   }

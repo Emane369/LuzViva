@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1 id="bienvenida"></h1>
+    <h1 id="bienvenida">Bienvenido a LuzViva</h1>
     <div class="idioma-selector">
       <button onclick="cambiarIdioma('es')">🇲🇽 Español</button>
       <button onclick="cambiarIdioma('en')">🇺🇸 English</button>
@@ -17,23 +17,16 @@
 
   <main>
     <section class="versiculo">
-      <h2 id="titulo_versiculo"></h2>
-      <p id="contenido_versiculo"></p>
+      <h2 id="titulo_versiculo">📜 Versículo del Día</h2>
+      <p id="contenido_versiculo">Cargando versículo...</p>
       <span id="referencia_versiculo"></span>
     </section>
-    
-<section class="santo">
-  <h2>🕊️ Santo del Día</h2>
-  <img src="assets/img/san-benito.jpg" alt="San Benito" />
-  <p><strong>San Benito:</strong> Protector contra las malas energías y guía de oración constante. Fundador del monacato occidental.</p>
-  <p><em>Oración:</em> Oh glorioso San Benito, intercede por nosotros y guíanos en el camino de la paz y la fe. Amén.</p>
-</section>
 
     <section class="oracion">
-      <h2 id="titulo_oracion"></h2>
-      <p id="contenido_oracion"></p>
+      <h2 id="titulo_oracion">🙏 Oración del Día</h2>
+      <p id="contenido_oracion">Cargando oración...</p>
       <audio controls>
-        <source src="assets/audio/oracion-demo.mp3" type="audio/mpeg" />
+        <source id="audio_oracion" src="" type="audio/mpeg" />
         Tu navegador no admite audio.
       </audio>
     </section>
