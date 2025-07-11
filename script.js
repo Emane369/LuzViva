@@ -1,5 +1,5 @@
 let idiomaActual = 'es';
-let oracionSeleccionada = 'padre_nuestro'; // Oración predeterminada
+let oracionSeleccionada = 'padre_nuestro';
 
 const traducciones = {
   es: {
@@ -24,6 +24,7 @@ async function cargarVersiculo() {
   const datos = await res.json();
   const categoria = idiomaActual === 'es' ? 'esperanza' : 'hope';
   const versiculos = datos[idiomaActual][categoria];
+
   const aleatorio = versiculos[Math.floor(Math.random() * versiculos.length)];
   document.getElementById('contenido_versiculo').textContent = aleatorio.texto;
   document.getElementById('referencia_versiculo').textContent = `— ${aleatorio.referencia}`;
@@ -66,12 +67,17 @@ async function cargarOracionPorNombre(categoria) {
   const datos = await res.json();
   const oracion = datos[idiomaActual][categoria];
 
+  const texto = document.getElementById("contenido_oracion");
+  const audio = document.querySelector("audio");
+
   if (oracion) {
-    document.getElementById("contenido_oracion").textContent = oracion.texto;
-    document.getElementById("audio_oracion").src = oracion.audio;
+    texto.textContent = oracion.texto;
+    audio.pause();                 // Detener cualquier reproducción previa
+    audio.setAttribute("src", oracion.audio); // Actualizar fuente
+    audio.load();                  // Recargar el nuevo audio
   } else {
-    document.getElementById("contenido_oracion").textContent = "[Oración no disponible]";
-    document.getElementById("audio_oracion").src = "";
+    texto.textContent = "[Oración no disponible]";
+    audio.setAttribute("src", "");
   }
 }
 
@@ -79,7 +85,7 @@ function cargarOracionDesdeSelector() {
   const selector = document.getElementById('oracion_selector');
   const seleccion = selector.value;
 
-  oracionSeleccionada = seleccion || 'padre_nuestro'; // guarda selección
+  oracionSeleccionada = seleccion || 'padre_nuestro';
   const categoria = idiomaActual === 'es' ? oracionSeleccionada : convertirNombreIngles(oracionSeleccionada);
   cargarOracionPorNombre(categoria);
 }
@@ -98,14 +104,17 @@ function actualizarSelector() {
 
 function actualizarTexto() {
   const t = traducciones[idiomaActual];
+
   document.getElementById('bienvenida').textContent = t.bienvenida;
   document.getElementById('titulo_versiculo').textContent = t.titulo_versiculo;
   document.getElementById('titulo_oracion').textContent = t.titulo_oracion;
 
   cargarVersiculo();
+
   const categoria = idiomaActual === 'es'
     ? oracionSeleccionada
     : convertirNombreIngles(oracionSeleccionada);
+
   cargarOracionPorNombre(categoria);
   actualizarSelector();
 }
