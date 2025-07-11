@@ -44,3 +44,48 @@ footer {
   background: #ccc;
   font-size: 14px;
 }
+function cargarOracionDesdeSelector() {
+  const selector = document.getElementById('oracion_selector');
+  const seleccion = selector.value;
+
+  if (!seleccion) {
+    document.getElementById('contenido_oracion').textContent = "[Selecciona una oración]";
+    document.getElementById('audio_oracion').src = "";
+    return;
+  }
+
+  const categoria = idiomaActual === 'es' ? seleccion : convertirNombreIngles(seleccion);
+  cargarOracionPorNombre(categoria);
+}
+
+// Traduce nombres de oración a inglés
+function convertirNombreIngles(nombre) {
+  const mapa = {
+    padre_nuestro: "our_father",
+    ave_maria: "hail_mary",
+    credo: "creed",
+    salve: "salve",
+    magnificat: "magnificat",
+    gloria: "glory_be",
+    actos_de_contricion: "act_of_contrition",
+    oracion_al_espiritu_santo: "prayer_to_holy_spirit",
+    angelus: "angelus",
+    oracion_por_la_familia: "prayer_for_family"
+  };
+  return mapa[nombre] || "our_father";
+}
+
+// Versión extendida para cargar por nombre
+async function cargarOracionPorNombre(categoria) {
+  const res = await fetch("data/oraciones.json");
+  const datos = await res.json();
+  const oracion = datos[idiomaActual][categoria];
+
+  if (oracion) {
+    document.getElementById("contenido_oracion").textContent = oracion.texto;
+    document.getElementById("audio_oracion").src = oracion.audio;
+  } else {
+    document.getElementById("contenido_oracion").textContent = "[Oración no disponible]";
+    document.getElementById("audio_oracion").src = "";
+  }
+}

@@ -23,13 +23,29 @@
     </section>
 
     <section class="oracion">
-      <h2 id="titulo_oracion">🙏 Oración del Día</h2>
-      <p id="contenido_oracion">Cargando oración...</p>
-      <audio controls>
-        <source id="audio_oracion" src="" type="audio/mpeg" />
-        Tu navegador no admite audio.
-      </audio>
-    </section>
+  <h2 id="titulo_oracion">🙏 Oración del Día</h2>
+
+  <select id="oracion_selector" onchange="cargarOracionDesdeSelector()">
+    <option value="">Selecciona una oración...</option>
+    <option value="padre_nuestro">Padre Nuestro</option>
+    <option value="ave_maria">Ave María</option>
+    <option value="credo">El Credo</option>
+    <option value="salve">La Salve</option>
+    <option value="magnificat">Magnificat</option>
+    <option value="gloria">Gloria</option>
+    <option value="actos_de_contricion">Acto de Contrición</option>
+    <option value="oracion_al_espiritu_santo">Espíritu Santo</option>
+    <option value="angelus">El Ángelus</option>
+    <option value="oracion_por_la_familia">Por la Familia</option>
+  </select>
+
+  <p id="contenido_oracion">Cargando oración...</p>
+  <audio controls>
+    <source id="audio_oracion" src="" type="audio/mpeg" />
+    Tu navegador no admite audio.
+  </audio>
+</section>
+
   </main>
 
   <footer>
