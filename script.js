@@ -24,7 +24,6 @@ async function cargarVersiculo() {
   const datos = await res.json();
   const categoria = idiomaActual === 'es' ? 'esperanza' : 'hope';
   const versiculos = datos[idiomaActual][categoria];
-
   const aleatorio = versiculos[Math.floor(Math.random() * versiculos.length)];
   document.getElementById('contenido_versiculo').textContent = aleatorio.texto;
   document.getElementById('referencia_versiculo').textContent = `— ${aleatorio.referencia}`;
@@ -69,15 +68,25 @@ async function cargarOracionPorNombre(categoria) {
 
   const texto = document.getElementById("contenido_oracion");
   const audio = document.querySelector("audio");
+  const source = document.getElementById("audio_oracion");
 
   if (oracion) {
     texto.textContent = oracion.texto;
-    audio.pause();                 // Detener cualquier reproducción previa
-    audio.setAttribute("src", oracion.audio); // Actualizar fuente
-    audio.load();                  // Recargar el nuevo audio
+
+    // 🔊 Reproduce nuevo audio correctamente en móvil y PC
+    audio.pause();
+    source.src = oracion.audio;
+    audio.load();
+
+    // 🩹 Parche para que el audio se actualice en móviles
+    audio.style.display = "none";
+    setTimeout(() => {
+      audio.style.display = "block";
+    }, 150);
   } else {
     texto.textContent = "[Oración no disponible]";
-    audio.setAttribute("src", "");
+    source.src = "";
+    audio.load();
   }
 }
 
@@ -92,7 +101,6 @@ function cargarOracionDesdeSelector() {
 
 function actualizarSelector() {
   const selector = document.getElementById('oracion_selector');
-
   const valor = idiomaActual === 'es'
     ? oracionSeleccionada
     : convertirNombreIngles(oracionSeleccionada);
@@ -104,7 +112,6 @@ function actualizarSelector() {
 
 function actualizarTexto() {
   const t = traducciones[idiomaActual];
-
   document.getElementById('bienvenida').textContent = t.bienvenida;
   document.getElementById('titulo_versiculo').textContent = t.titulo_versiculo;
   document.getElementById('titulo_oracion').textContent = t.titulo_oracion;
