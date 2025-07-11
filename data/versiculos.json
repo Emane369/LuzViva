@@ -1,26 +1,50 @@
 {
   "es": {
     "esperanza": [
-      {
-        "texto": "El Señor es mi pastor, nada me falta.",
-        "referencia": "Salmo 23:1"
-      },
-      {
-        "texto": "Aunque ande en valle de sombra, no temeré mal alguno.",
-        "referencia": "Salmo 23:4"
-      }
+      { "texto": "El Señor es mi pastor, nada me falta.", "referencia": "Salmo 23:1" },
+      { "texto": "Aunque ande en valle de sombra, no temeré mal alguno.", "referencia": "Salmo 23:4" },
+      { "texto": "No temas, porque yo estoy contigo.", "referencia": "Isaías 41:10" },
+      { "texto": "Los que esperan en el Señor renovarán sus fuerzas.", "referencia": "Isaías 40:31" },
+      { "texto": "Acerquémonos al trono de gracia con confianza.", "referencia": "Hebreos 4:16" },
+      { "texto": "Pon tu esperanza en el Señor, ten valor, cobra ánimo.", "referencia": "Salmo 27:14" },
+      { "texto": "Mis ojos están puestos en ti, Señor; en ti confío.", "referencia": "Salmo 141:8" },
+      { "texto": "Confiad siempre en el Señor, porque él es nuestra roca eterna.", "referencia": "Isaías 26:4" },
+      { "texto": "Mi esperanza está en tu palabra.", "referencia": "Salmo 119:114" },
+      { "texto": "Dios es nuestro refugio y fortaleza.", "referencia": "Salmo 46:1" },
+      { "texto": "El que habita al abrigo del Altísimo morará bajo la sombra del Omnipotente.", "referencia": "Salmo 91:1" },
+      { "texto": "No se turbe vuestro corazón; creéis en Dios, creed también en mí.", "referencia": "Juan 14:1" },
+      { "texto": "Porque yo sé los planes que tengo para ustedes —planes de bienestar—.", "referencia": "Jeremías 29:11" },
+      { "texto": "El Señor es bueno, una fortaleza en el día de la angustia.", "referencia": "Nahúm 1:7" },
+      { "texto": "El gozo del Señor es mi fuerza.", "referencia": "Nehemías 8:10" },
+      { "texto": "Todo lo puedo en Cristo que me fortalece.", "referencia": "Filipenses 4:13" },
+      { "texto": "Alumbrando los ojos de vuestro entendimiento para conocer la esperanza de su llamamiento.", "referencia": "Efesios 1:18" },
+      { "texto": "No nos cansemos de hacer el bien, porque a su tiempo cosecharemos.", "referencia": "Gálatas 6:9" },
+      { "texto": "Bendito el hombre que confía en el Señor, cuya confianza está en él.", "referencia": "Jeremías 17:7" },
+      { "texto": "He puesto al Señor siempre delante de mí; no seré conmovido.", "referencia": "Salmo 16:8" }
     ]
   },
   "en": {
     "hope": [
-      {
-        "texto": "The Lord is my shepherd, I shall not want.",
-        "referencia": "Psalm 23:1"
-      },
-      {
-        "texto": "Even though I walk through the valley of the shadow of death, I will fear no evil.",
-        "referencia": "Psalm 23:4"
-      }
+      { "texto": "The Lord is my shepherd, I shall not want.", "referencia": "Psalm 23:1" },
+      { "texto": "Even though I walk through the valley of the shadow of death, I will fear no evil.", "referencia": "Psalm 23:4" },
+      { "texto": "Do not fear, for I am with you.", "referencia": "Isaiah 41:10" },
+      { "texto": "Those who hope in the Lord will renew their strength.", "referencia": "Isaiah 40:31" },
+      { "texto": "Let us approach the throne of grace with confidence.", "referencia": "Hebrews 4:16" },
+      { "texto": "Put your hope in the Lord; be strong and take heart.", "referencia": "Psalm 27:14" },
+      { "texto": "My eyes are fixed on you, Sovereign Lord; in you I take refuge.", "referencia": "Psalm 141:8" },
+      { "texto": "Trust in the Lord forever, for the Lord is the Rock eternal.", "referencia": "Isaiah 26:4" },
+      { "texto": "You are my refuge and my shield; I have put my hope in your word.", "referencia": "Psalm 119:114" },
+      { "texto": "God is our refuge and strength, an ever-present help in trouble.", "referencia": "Psalm 46:1" },
+      { "texto": "Whoever dwells in the shelter of the Most High will rest in the shadow of the Almighty.", "referencia": "Psalm 91:1" },
+      { "texto": "Do not let your hearts be troubled. You believe in God; believe also in me.", "referencia": "John 14:1" },
+      { "texto": "For I know the plans I have for you—plans to prosper you, not to harm you.", "referencia": "Jeremiah 29:11" },
+      { "texto": "The Lord is good, a stronghold in the day of trouble.", "referencia": "Nahum 1:7" },
+      { "texto": "The joy of the Lord is your strength.", "referencia": "Nehemiah 8:10" },
+      { "texto": "I can do all things through Christ who strengthens me.", "referencia": "Philippians 4:13" },
+      { "texto": "The eyes of your understanding being enlightened to know the hope of his calling.", "referencia": "Ephesians 1:18" },
+      { "texto": "Let us not grow weary in doing good, for we will reap a harvest at the proper time.", "referencia": "Galatians 6:9" },
+      { "texto": "Blessed is the man who trusts in the Lord, whose confidence is in Him.", "referencia": "Jeremiah 17:7" },
+      { "texto": "I keep my eyes always on the Lord. With him at my right hand, I will not be shaken.", "referencia": "Psalm 16:8" }
     ]
   }
 }
