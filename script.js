@@ -1,7 +1,6 @@
-// Idioma por defecto
 let idiomaActual = 'es';
+let oracionSeleccionada = 'padre_nuestro'; // Oración predeterminada
 
-// Textos fijos por idioma
 const traducciones = {
   es: {
     bienvenida: "Bienvenido a LuzViva",
@@ -15,68 +14,100 @@ const traducciones = {
   }
 };
 
-// 🔄 Botones que cambian el idioma
 function cambiarIdioma(lang) {
   idiomaActual = lang;
   actualizarTexto();
 }
 
-// 📜 Cargar versículo por idioma
 async function cargarVersiculo() {
-  try {
-    const res = await fetch('data/versiculos.json');
-    const datos = await res.json();
-    const categoria = idiomaActual === 'es' ? 'esperanza' : 'hope';
-    const versiculos = datos[idiomaActual][categoria];
+  const res = await fetch('data/versiculos.json');
+  const datos = await res.json();
+  const categoria = idiomaActual === 'es' ? 'esperanza' : 'hope';
+  const versiculos = datos[idiomaActual][categoria];
+  const aleatorio = versiculos[Math.floor(Math.random() * versiculos.length)];
+  document.getElementById('contenido_versiculo').textContent = aleatorio.texto;
+  document.getElementById('referencia_versiculo').textContent = `— ${aleatorio.referencia}`;
+}
 
-    if (versiculos && versiculos.length > 0) {
-      const aleatorio = versiculos[Math.floor(Math.random() * versiculos.length)];
-      document.getElementById('contenido_versiculo').textContent = aleatorio.texto;
-      document.getElementById('referencia_versiculo').textContent = `— ${aleatorio.referencia}`;
-    } else {
-      document.getElementById('contenido_versiculo').textContent = "[Versículo no disponible]";
-      document.getElementById('referencia_versiculo').textContent = "";
-    }
-  } catch (error) {
-    console.error("Error al cargar versículo:", error);
-    document.getElementById('contenido_versiculo').textContent = "[Error al cargar versículo]";
-    document.getElementById('referencia_versiculo').textContent = "";
+function convertirNombreIngles(nombre) {
+  const mapa = {
+    padre_nuestro: "our_father",
+    ave_maria: "hail_mary",
+    credo: "creed",
+    salve: "salve",
+    magnificat: "magnificat",
+    gloria: "glory_be",
+    actos_de_contricion: "act_of_contrition",
+    oracion_al_espiritu_santo: "prayer_to_holy_spirit",
+    angelus: "angelus",
+    oracion_por_la_familia: "prayer_for_family"
+  };
+  return mapa[nombre] || "our_father";
+}
+
+function convertirNombreEspañol(nombre) {
+  const mapa = {
+    our_father: "padre_nuestro",
+    hail_mary: "ave_maria",
+    creed: "credo",
+    salve: "salve",
+    magnificat: "magnificat",
+    glory_be: "gloria",
+    act_of_contrition: "actos_de_contricion",
+    prayer_to_holy_spirit: "oracion_al_espiritu_santo",
+    angelus: "angelus",
+    prayer_for_family: "oracion_por_la_familia"
+  };
+  return mapa[nombre] || "padre_nuestro";
+}
+
+async function cargarOracionPorNombre(categoria) {
+  const res = await fetch("data/oraciones.json");
+  const datos = await res.json();
+  const oracion = datos[idiomaActual][categoria];
+
+  if (oracion) {
+    document.getElementById("contenido_oracion").textContent = oracion.texto;
+    document.getElementById("audio_oracion").src = oracion.audio;
+  } else {
+    document.getElementById("contenido_oracion").textContent = "[Oración no disponible]";
+    document.getElementById("audio_oracion").src = "";
   }
 }
 
-// 🙏 Cargar oración según idioma
-async function cargarOracion() {
-  try {
-    const res = await fetch('data/oraciones.json');
-    const datos = await res.json();
-    const categoria = idiomaActual === 'es' ? 'padre_nuestro' : 'our_father';
-    const oracion = datos[idiomaActual][categoria];
+function cargarOracionDesdeSelector() {
+  const selector = document.getElementById('oracion_selector');
+  const seleccion = selector.value;
 
-    if (oracion) {
-      document.getElementById('contenido_oracion').textContent = oracion.texto;
-      document.getElementById('audio_oracion').src = oracion.audio;
-    } else {
-      document.getElementById('contenido_oracion').textContent = "[Oración no disponible]";
-      document.getElementById('audio_oracion').src = "";
-    }
-  } catch (error) {
-    console.error("Error al cargar oración:", error);
-    document.getElementById('contenido_oracion').textContent = "[Error al cargar oración]";
-    document.getElementById('audio_oracion').src = "";
-  }
+  oracionSeleccionada = seleccion || 'padre_nuestro'; // guarda selección
+  const categoria = idiomaActual === 'es' ? oracionSeleccionada : convertirNombreIngles(oracionSeleccionada);
+  cargarOracionPorNombre(categoria);
 }
 
-// 🧩 Actualiza los textos visuales y el contenido dinámico
+function actualizarSelector() {
+  const selector = document.getElementById('oracion_selector');
+
+  const valor = idiomaActual === 'es'
+    ? oracionSeleccionada
+    : convertirNombreIngles(oracionSeleccionada);
+
+  selector.value = idiomaActual === 'es'
+    ? convertirNombreEspañol(valor)
+    : valor;
+}
+
 function actualizarTexto() {
   const t = traducciones[idiomaActual];
-
   document.getElementById('bienvenida').textContent = t.bienvenida;
   document.getElementById('titulo_versiculo').textContent = t.titulo_versiculo;
   document.getElementById('titulo_oracion').textContent = t.titulo_oracion;
 
   cargarVersiculo();
-  cargarOracion();
+  const categoria = idiomaActual === 'es'
+    ? oracionSeleccionada
+    : convertirNombreIngles(oracionSeleccionada);
+  cargarOracionPorNombre(categoria);
+  actualizarSelector();
 }
 
-// 🕊️ Inicializar
 actualizarTexto();
