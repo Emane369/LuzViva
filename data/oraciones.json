@@ -1,14 +1,86 @@
 {
   "es": {
-    "gratitud": {
-      "texto": "Señor, gracias por este nuevo día. Te ofrezco mis acciones como semilla de paz.",
-      "audio": "assets/audio/oracion-gratitud-es.mp3"
+    "padre_nuestro": {
+      "texto": "Padre nuestro que estás en el cielo, santificado sea tu Nombre...\n(Completa versión)",
+      "audio": "assets/audio/padre-nuestro-es.mp3"
+    },
+    "ave_maria": {
+      "texto": "Dios te salve, María, llena eres de gracia, el Señor es contigo...\n(Completa versión)",
+      "audio": "assets/audio/ave-maria-es.mp3"
+    },
+    "credo": {
+      "texto": "Creo en Dios, Padre todopoderoso, creador del cielo y de la tierra...\n(Completa versión)",
+      "audio": "assets/audio/credo-es.mp3"
+    },
+    "salve": {
+      "texto": "Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra...\n(Completa versión)",
+      "audio": "assets/audio/salve-es.mp3"
+    },
+    "magnificat": {
+      "texto": "Proclama mi alma la grandeza del Señor, se alegra mi espíritu en Dios mi Salvador...\n(Completa versión)",
+      "audio": "assets/audio/magnificat-es.mp3"
+    },
+    "gloria": {
+      "texto": "Gloria al Padre, al Hijo y al Espíritu Santo...\n(Completa versión)",
+      "audio": "assets/audio/gloria-es.mp3"
+    },
+    "actos_de_contricion": {
+      "texto": "Señor mío, Jesucristo, Dios y hombre verdadero, me pesa de todo corazón haber pecado...\n(Completa versión)",
+      "audio": "assets/audio/contricion-es.mp3"
+    },
+    "oracion_al_espiritu_santo": {
+      "texto": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor...\n(Completa versión)",
+      "audio": "assets/audio/espiritu-santo-es.mp3"
+    },
+    "angelus": {
+      "texto": "El ángel del Señor anunció a María, y concibió por obra del Espíritu Santo...\n(Completa versión)",
+      "audio": "assets/audio/angelus-es.mp3"
+    },
+    "oracion_por_la_familia": {
+      "texto": "Señor, bendice a mi familia. Que reine en nuestro hogar el amor, la fe y la paz...\n(Completa versión)",
+      "audio": "assets/audio/familia-es.mp3"
     }
   },
   "en": {
-    "gratitude": {
-      "texto": "Lord, thank you for this new day. May my actions be seeds of peace.",
-      "audio": "assets/audio/oracion-gratitude-en.mp3"
+    "our_father": {
+      "texto": "Our Father who art in heaven, hallowed be thy name...\n(Full version)",
+      "audio": "assets/audio/our-father-en.mp3"
+    },
+    "hail_mary": {
+      "texto": "Hail Mary, full of grace, the Lord is with thee...\n(Full version)",
+      "audio": "assets/audio/hail-mary-en.mp3"
+    },
+    "creed": {
+      "texto": "I believe in God, the Father almighty, Creator of heaven and earth...\n(Full version)",
+      "audio": "assets/audio/creed-en.mp3"
+    },
+    "salve": {
+      "texto": "Hail, Holy Queen, Mother of mercy, our life, our sweetness, and our hope...\n(Full version)",
+      "audio": "assets/audio/salve-en.mp3"
+    },
+    "magnificat": {
+      "texto": "My soul magnifies the Lord, and my spirit rejoices in God my Savior...\n(Full version)",
+      "audio": "assets/audio/magnificat-en.mp3"
+    },
+    "glory_be": {
+      "texto": "Glory be to the Father, and to the Son, and to the Holy Spirit...\n(Full version)",
+      "audio": "assets/audio/glory-be-en.mp3"
+    },
+    "act_of_contrition": {
+      "texto": "O my God, I am heartily sorry for having offended you...\n(Full version)",
+      "audio": "assets/audio/contrition-en.mp3"
+    },
+    "prayer_to_holy_spirit": {
+      "texto": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love...\n(Full version)",
+      "audio": "assets/audio/holy-spirit-en.mp3"
+    },
+    "angelus": {
+      "texto": "The Angel of the Lord declared unto Mary, and she conceived by the Holy Spirit...\n(Full version)",
+      "audio": "assets/audio/angelus-en.mp3"
+    },
+    "prayer_for_family": {
+      "texto": "Lord, bless my family. Let love, faith, and peace dwell within our home...\n(Full version)",
+      "audio": "assets/audio/family-en.mp3"
     }
   }
 }
