@@ -27,7 +27,9 @@ async function cargarVersiculo(categoria = "esperanza") {
   document.getElementById('referencia_versiculo').textContent = `— ${aleatorio.referencia}`;
 }
 
-async function cargarOracion(categoria = "gratitud") {
+const categoriaOracion = idiomaActual === 'es' ? 'gratitud' : 'gratitude';
+cargarOracion(categoriaOracion);
+ {
   const res = await fetch('data/oraciones.json');
   const datos = await res.json();
   const oracion = datos[idiomaActual][categoria];
