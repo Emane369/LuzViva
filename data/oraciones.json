@@ -63,23 +63,43 @@
       "audio": "assets/audio/magnificat-en.mp3"
     },
     "glory_be": {
-      "texto": "Glory be to the Father, and to the Son, and to the Holy Spirit...\n(Full version)",
+      "texto": "Glory be to the Father, and to the Son, and to the Holy Spirit: As it was in the beginning, is now, and ever shall be, world without end. Amen.",
       "audio": "assets/audio/glory-be-en.mp3"
     },
     "act_of_contrition": {
-      "texto": "O my God, I am heartily sorry for having offended you...\n(Full version)",
+      "texto": "O my God, I am sorry for my sins because I have offended you. I know I should love you above all things. Help me to do penance, to do better, and to avoid anything that might lead me to sin. Amen.",
       "audio": "assets/audio/contrition-en.mp3"
     },
     "prayer_to_holy_spirit": {
-      "texto": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love...\n(Full version)",
+      "texto": "Dear Holy Spirit, you are my friend. I give you myself. I ask you to dwell deeply inside of me and make me holy. I want to know the fire of God’s love. I want to love God with all my heart. Amen!",
       "audio": "assets/audio/holy-spirit-en.mp3"
     },
     "angelus": {
-      "texto": "The Angel of the Lord declared unto Mary, and she conceived by the Holy Spirit...\n(Full version)",
+      "texto": "The Angel of the Lord declared to Mary: And she conceived of the Holy Spirit.
+
+Hail Mary, full of grace, the Lord is with thee; blessed art thou among women and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of
+our death. Amen.
+
+Behold the handmaid of the Lord: Be it done unto me according to Thy word.
+
+Hail Mary...
+
+And the Word was made Flesh: And dwelt among us.
+
+Hail Mary...
+
+
+Pray for us, O Holy Mother of God, that we may be made worthy of the promises of Christ. 
+
+Let us pray:
+
+Pour forth, we beseech Thee, O Lord, Thy grace into our hearts; that we, to whom the incarnation of Christ, Thy Son, was made known by the message of an angel, may by His Passion and Cross be brought to the glory of His Resurrection, through the same Christ Our Lord.
+
+Amen. ",
       "audio": "assets/audio/angelus-en.mp3"
     },
     "prayer_for_family": {
-      "texto": "Lord, bless my family. Let love, faith, and peace dwell within our home...\n(Full version)",
+      "texto": "Heavenly Father, we come before you as a family, seeking your divine guidance. Help us to love and support one another, and may our family be a source of unity and strength. We ask for your blessings and grace to be upon us always.",
       "audio": "assets/audio/family-en.mp3"
     }
   }
