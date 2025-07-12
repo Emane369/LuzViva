@@ -67,22 +67,27 @@ async function cargarOracionPorNombre(categoria) {
   const oracion = datos[idiomaActual][categoria];
 
   const texto = document.getElementById("contenido_oracion");
-  const audio = document.querySelector("audio");
-  const source = document.getElementById("audio_oracion");
+  const audioSource = document.getElementById("audio_oracion");
+  const reproductor = document.querySelector("audio");
 
   if (oracion) {
     texto.textContent = oracion.texto;
-    audio.pause();
-    source.src = oracion.audio;
-    audio.load();
-    audio.style.display = "none";
+
+    // 🔊 Reiniciar y cargar nuevo audio
+    reproductor.pause();
+    reproductor.currentTime = 0;
+    audioSource.setAttribute("src", oracion.audio);
+    reproductor.load();
+
+    // 🩹 Parche visual para móviles
+    reproductor.style.display = "none";
     setTimeout(() => {
-      audio.style.display = "block";
-    }, 150);
+      reproductor.style.display = "block";
+    }, 100);
   } else {
     texto.textContent = "[Oración no disponible]";
-    source.src = "";
-    audio.load();
+    audioSource.setAttribute("src", "");
+    reproductor.load();
   }
 }
 
