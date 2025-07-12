@@ -1,106 +1,70 @@
 {
   "es": {
     "padre_nuestro": {
-      "texto": "Padre nuestro que estás en el cielo, santificado sea tu Nombre...\n(Completa versión)",
+      "texto": "Padre nuestro que estás en el cielo, santificado sea tu Nombre. Venga a nosotros tu reino. Hágase tu voluntad en la tierra como en el cielo. Danos hoy nuestro pan de cada día. Perdona nuestras ofensas, como también nosotros perdonamos a los que nos ofenden. No nos dejes caer en la tentación y líbranos del mal. Amén.",
       "audio": "assets/audio/padre-nuestro-es.mp3"
     },
     "ave_maria": {
-      "texto": "Dios te salve, María, llena eres de gracia, el Señor es contigo...\n(Completa versión)",
+      "texto": "Dios te salve, María, llena eres de gracia, el Señor es contigo. Bendita tú eres entre todas las mujeres y bendito es el fruto de tu vientre, Jesús. Santa María, Madre de Dios, ruega por nosotros pecadores, ahora y en la hora de nuestra muerte. Amén.",
       "audio": "assets/audio/ave-maria-es.mp3"
     },
     "credo": {
-      "texto": "Creo en Dios, Padre todopoderoso, creador del cielo y de la tierra...\n(Completa versión)",
+      "texto": "Creo en Dios, Padre todopoderoso, creador del cielo y de la tierra. Y en Jesucristo, su único Hijo, nuestro Señor, que fue concebido por obra y gracia del Espíritu Santo, nació de Santa María Virgen, padeció bajo el poder de Poncio Pilato, fue crucificado, muerto y sepultado. Descendió a los infiernos, al tercer día resucitó de entre los muertos. Subió a los cielos, y está sentado a la derecha de Dios, Padre todopoderoso. Desde allí ha de venir a juzgar a vivos y muertos. Creo en el Espíritu Santo, la Santa Iglesia Católica, la comunión de los santos, el perdón de los pecados, la resurrección de la carne y la vida eterna. Amén.",
       "audio": "assets/audio/credo-es.mp3"
     },
     "salve": {
-      "texto": "Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra...\n(Completa versión)",
+      "texto": "Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra. A ti llamamos los desterrados hijos de Eva. A ti suspiramos, gimiendo y llorando en este valle de lágrimas. Ea, pues, Señora abogada nuestra, vuelve a nosotros esos tus ojos misericordiosos. Y después de este destierro, muéstranos a Jesús, fruto bendito de tu vientre. ¡Oh clemente, oh piadosa, oh dulce Virgen María!",
       "audio": "assets/audio/salve-es.mp3"
     },
     "magnificat": {
-      "texto": "Proclama mi alma la grandeza del Señor, se alegra mi espíritu en Dios mi Salvador...\n(Completa versión)",
+      "texto": "Proclama mi alma la grandeza del Señor, se alegra mi espíritu en Dios mi Salvador, porque ha mirado la humildad de su sierva. Desde ahora me llamarán dichosa todas las generaciones, porque el Poderoso ha hecho obras grandes por mí: su nombre es Santo, y su misericordia llega a sus fieles de generación en generación. Él hace proezas con su brazo, dispersa a los soberbios de corazón, derriba del trono a los poderosos y enaltece a los humildes. A los hambrientos los colma de bienes y a los ricos los despide vacíos. Auxilia a Israel, su siervo, acordándose de su misericordia como lo había prometido a nuestros padres, a Abraham y a su descendencia para siempre.",
       "audio": "assets/audio/magnificat-es.mp3"
     },
     "gloria": {
-      "texto": "Gloria al Padre, al Hijo y al Espíritu Santo...\n(Completa versión)",
+      "texto": "Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.",
       "audio": "assets/audio/gloria-es.mp3"
     },
     "actos_de_contricion": {
-      "texto": "Señor mío, Jesucristo, Dios y hombre verdadero, me pesa de todo corazón haber pecado...\n(Completa versión)",
+      "texto": "Señor mío, Jesucristo, Dios y hombre verdadero, me pesa de todo corazón haber pecado porque te he ofendido. Tú eres infinitamente bueno y digno de ser amado sobre todas las cosas. Propongo firmemente con tu gracia no pecar más, confesarme y cumplir la penitencia. Confío en que me perdonarás por tu infinita misericordia. Amén.",
       "audio": "assets/audio/contricion-es.mp3"
     },
     "oracion_al_espiritu_santo": {
-      "texto": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor...\n(Completa versión)",
+      "texto": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor. Envía tu Espíritu y todo será creado. Y renovarás la faz de la tierra. Amén.",
       "audio": "assets/audio/espiritu-santo-es.mp3"
     },
     "angelus": {
-      "texto": "El ángel del Señor anunció a María, y concibió por obra del Espíritu Santo...\n(Completa versión)",
+      "texto": "El ángel del Señor anunció a María, y concibió por obra del Espíritu Santo. He aquí la esclava del Señor; hágase en mí según tu palabra. El Verbo se hizo carne, y habitó entre nosotros. Ruega por nosotros, Santa Madre de Dios, para que seamos dignos de alcanzar las promesas de Nuestro Señor Jesucristo. Amén.",
       "audio": "assets/audio/angelus-es.mp3"
     },
     "oracion_por_la_familia": {
-      "texto": "Señor, bendice a mi familia. Que reine en nuestro hogar el amor, la fe y la paz...\n(Completa versión)",
+      "texto": "Señor, bendice a mi familia. Que reine en nuestro hogar el amor, la fe y la paz. Guíanos con tu luz y fortalece nuestros lazos con tu misericordia. Amén.",
       "audio": "assets/audio/familia-es.mp3"
     }
   },
   "en": {
     "our_father": {
-      "texto": "Our Father who art in heaven, hallowed be thy name...\n(Full version)",
+      "texto": "Our Father who art in heaven, hallowed be thy name. Thy kingdom come, thy will be done on earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. Amen.",
       "audio": "assets/audio/our-father-en.mp3"
     },
     "hail_mary": {
-      "texto": "Hail Mary, full of grace, the Lord is with thee...\n(Full version)",
+      "texto": "Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.",
       "audio": "assets/audio/hail-mary-en.mp3"
     },
     "creed": {
-      "texto": "I believe in God, the Father almighty, Creator of heaven and earth...\n(Full version)",
+      "texto": "I believe in God, the Father almighty, Creator of heaven and earth, and in Jesus Christ, His only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried. He descended into hell. On the third day He rose again from the dead. He ascended into heaven and is seated at the right hand of God the Father almighty. From there He will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.",
       "audio": "assets/audio/creed-en.mp3"
     },
     "salve": {
-      "texto": "Hail, Holy Queen, Mother of mercy, our life, our sweetness, and our hope...\n(Full version)",
+      "texto": "Hail, Holy Queen, Mother of mercy, our life, our sweetness, and our hope. To thee do we cry, poor banished children of Eve. To thee do we send up our sighs, mourning and weeping in this valley of tears. Turn then, most gracious advocate, thine eyes of mercy toward us. And after this exile, show unto us the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary!",
       "audio": "assets/audio/salve-en.mp3"
     },
     "magnificat": {
-      "texto": "My soul magnifies the Lord, and my spirit rejoices in God my Savior...\n(Full version)",
+      "texto": "My soul magnifies the Lord, and my spirit rejoices in God my Savior, for he has regarded the humble state of his servant. From now on all generations will call me blessed. For the Mighty One has done great things for me—holy is his name. His mercy extends to those who fear him, from generation to generation. He has performed mighty deeds with his arm; he has scattered the proud in their inmost thoughts. He has brought down rulers from their thrones but has lifted up the humble. He has filled the hungry with good things but has sent the rich away empty. He has helped his servant Israel, remembering to be merciful, to Abraham and his descendants forever.",
       "audio": "assets/audio/magnificat-en.mp3"
     },
     "glory_be": {
-      "texto": "Glory be to the Father, and to the Son, and to the Holy Spirit: As it was in the beginning, is now, and ever shall be, world without end. Amen.",
+      "texto": "Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.",
       "audio": "assets/audio/glory-be-en.mp3"
     },
     "act_of_contrition": {
-      "texto": "O my God, I am sorry for my sins because I have offended you. I know I should love you above all things. Help me to do penance, to do better, and to avoid anything that might lead me to sin. Amen.",
-      "audio": "assets/audio/contrition-en.mp3"
-    },
-    "prayer_to_holy_spirit": {
-      "texto": "Dear Holy Spirit, you are my friend. I give you myself. I ask you to dwell deeply inside of me and make me holy. I want to know the fire of God’s love. I want to love God with all my heart. Amen!",
-      "audio": "assets/audio/holy-spirit-en.mp3"
-    },
-    "angelus": {
-      "texto": "The Angel of the Lord declared to Mary: And she conceived of the Holy Spirit.
-
-Hail Mary, full of grace, the Lord is with thee; blessed art thou among women and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of
-our death. Amen.
-
-Behold the handmaid of the Lord: Be it done unto me according to Thy word.
-
-Hail Mary...
-
-And the Word was made Flesh: And dwelt among us.
-
-Hail Mary...
-
-
-Pray for us, O Holy Mother of God, that we may be made worthy of the promises of Christ. 
-
-Let us pray:
-
-Pour forth, we beseech Thee, O Lord, Thy grace into our hearts; that we, to whom the incarnation of Christ, Thy Son, was made known by the message of an angel, may by His Passion and Cross be brought to the glory of His Resurrection, through the same Christ Our Lord.
-
-Amen. ",
-      "audio": "assets/audio/angelus-en.mp3"
-    },
-    "prayer_for_family": {
-      "texto": "Heavenly Father, we come before you as a family, seeking your divine guidance. Help us to love and support one another, and may our family be a source of unity and strength. We ask for your blessings and grace to be upon us always.",
-      "audio": "assets/audio/family-en.mp3"
-    }
-  }
-}
+      "texto": "O my God, I am heartily sorry for having offended You. I detest all my sins because I dread the loss of Heaven and the pains of Hell. But most of all because they offend You, my God,

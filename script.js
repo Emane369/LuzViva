@@ -72,13 +72,9 @@ async function cargarOracionPorNombre(categoria) {
 
   if (oracion) {
     texto.textContent = oracion.texto;
-
-    // 🔊 Reproduce nuevo audio correctamente en móvil y PC
     audio.pause();
     source.src = oracion.audio;
     audio.load();
-
-    // 🩹 Parche para que el audio se actualice en móviles
     audio.style.display = "none";
     setTimeout(() => {
       audio.style.display = "block";
