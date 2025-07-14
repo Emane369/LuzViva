@@ -16,5 +16,47 @@
     "descripcion": "La declaración de nuestra fe católica, raíz y guía espiritual.",
     "color": "#B6D7A8",
     "icono": "icons/dove.svg"
+  },
+  "salve": {
+    "titulo": "Salve",
+    "descripcion": "Invocación a la Reina y Madre de misericordia, nuestra esperanza.",
+    "color": "#AC9DD2",
+    "icono": "icons/crown.svg"
+  },
+  "magnificat": {
+    "titulo": "Magnificat",
+    "descripcion": "El canto de María reconociendo la grandeza y misericordia de Dios.",
+    "color": "#F3D49C",
+    "icono": "icons/lily.svg"
+  },
+  "gloria": {
+    "titulo": "Gloria",
+    "descripcion": "Alabanza a la Santísima Trinidad, eterna y luminosa.",
+    "color": "#F4A261",
+    "icono": "icons/trinity.svg"
+  },
+  "actos_de_contricion": {
+    "titulo": "Acto de Contrición",
+    "descripcion": "Una confesión sincera y arrepentida ante la misericordia divina.",
+    "color": "#DD8888",
+    "icono": "icons/tear.svg"
+  },
+  "oracion_al_espiritu_santo": {
+    "titulo": "Oración al Espíritu Santo",
+    "descripcion": "Invocación para encender en nosotros el fuego de su amor.",
+    "color": "#BCE3D0",
+    "icono": "icons/flame.svg"
+  },
+  "angelus": {
+    "titulo": "Ángelus",
+    "descripcion": "Recordatorio diario de la Encarnación del Verbo en María.",
+    "color": "#FFF6B7",
+    "icono": "icons/angel.svg"
+  },
+  "oracion_por_la_familia": {
+    "titulo": "Oración por la Familia",
+    "descripcion": "Súplica por la paz, el amor y la unión dentro del hogar.",
+    "color": "#F7B4D2",
+    "icono": "icons/heart-house.svg"
   }
 }
