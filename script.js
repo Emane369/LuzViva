@@ -128,3 +128,27 @@ function actualizarTexto() {
 }
 
 actualizarTexto();
+
+cargarFichasOraciones();
+async function cargarFichasOraciones() {
+  const res = await fetch("data/fichas-oraciones.json");
+  const fichas = await res.json();
+  const galeria = document.querySelector(".oraciones-galeria");
+
+  galeria.innerHTML = ""; // Limpiar contenido anterior
+
+  Object.keys(fichas).forEach(key => {
+    const ficha = fichas[key];
+    const card = document.createElement("div");
+    card.className = "ficha-oracion";
+    card.style.backgroundColor = ficha.color;
+
+    card.innerHTML = `
+      <img src="${ficha.icono}" alt="${ficha.titulo}" class="icono-oracion" />
+      <h3>${ficha.titulo}</h3>
+      <p>${ficha.descripcion}</p>
+    `;
+
+    galeria.appendChild(card);
+  });
+}

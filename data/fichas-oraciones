@@ -1,0 +1,20 @@
+{
+  "padre_nuestro": {
+    "titulo": "Padre Nuestro",
+    "descripcion": "La oración que Jesús nos enseñó para entregarnos al plan divino.",
+    "color": "#8EB1E5",
+    "icono": "icons/cross.svg"
+  },
+  "ave_maria": {
+    "titulo": "Ave María",
+    "descripcion": "Una súplica de amor y fe a la Madre de Dios.",
+    "color": "#E5A6C8",
+    "icono": "icons/rose.svg"
+  },
+  "credo": {
+    "titulo": "El Credo",
+    "descripcion": "La declaración de nuestra fe católica, raíz y guía espiritual.",
+    "color": "#B6D7A8",
+    "icono": "icons/dove.svg"
+  }
+}

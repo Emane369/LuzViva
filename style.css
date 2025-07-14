@@ -89,3 +89,29 @@ async function cargarOracionPorNombre(categoria) {
     document.getElementById("audio_oracion").src = "";
   }
 }
+.oraciones-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.ficha-oracion {
+  width: 220px;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+.ficha-oracion:hover {
+  transform: scale(1.05);
+}
+
+.icono-oracion {
+  width: 48px;
+  margin-bottom: 12px;
+}
