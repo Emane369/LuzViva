@@ -72,14 +72,11 @@ async function cargarOracionPorNombre(categoria) {
 
   if (oracion) {
     texto.textContent = oracion.texto;
-
-    // 🔊 Reiniciar y cargar nuevo audio
     reproductor.pause();
     reproductor.currentTime = 0;
     audioSource.setAttribute("src", oracion.audio);
     reproductor.load();
 
-    // 🩹 Parche visual para móviles
     reproductor.style.display = "none";
     setTimeout(() => {
       reproductor.style.display = "block";
@@ -129,13 +126,17 @@ function actualizarTexto() {
 
 actualizarTexto();
 
-cargarFichasOraciones();
+
+// 🎨 Fichas devocionales visuales
+
 async function cargarFichasOraciones() {
   const res = await fetch("data/fichas-oraciones.json");
   const fichas = await res.json();
   const galeria = document.querySelector(".oraciones-galeria");
 
-  galeria.innerHTML = ""; // Limpiar contenido anterior
+  if (!galeria) return; // Si no existe el contenedor, salimos
+
+  galeria.innerHTML = "";
 
   Object.keys(fichas).forEach(key => {
     const ficha = fichas[key];
@@ -152,3 +153,5 @@ async function cargarFichasOraciones() {
     galeria.appendChild(card);
   });
 }
+
+cargarFichasOraciones();
