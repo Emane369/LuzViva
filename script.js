@@ -155,3 +155,34 @@ async function cargarFichasOraciones() {
 }
 
 cargarFichasOraciones();
+const canvas = document.getElementById("particulas");
+if (canvas) {
+  const ctx = canvas.getContext("2d");
+  canvas.width = window.innerWidth;
+  canvas.height = 180;
+
+  let estrellas = Array.from({length: 40}, () => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 2 + 1,
+    d: Math.random() * 1.5
+  }));
+
+  function animar() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "rgba(255,255,255,0.7)";
+    estrellas.forEach(e => {
+      ctx.beginPath();
+      ctx.arc(e.x, e.y, e.r, 0, Math.PI * 2);
+      ctx.fill();
+      e.y += e.d;
+      if (e.y > canvas.height) {
+        e.y = 0;
+        e.x = Math.random() * canvas.width;
+      }
+    });
+    requestAnimationFrame(animar);
+  }
+
+  animar();
+}

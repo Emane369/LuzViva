@@ -154,3 +154,32 @@ async function cargarOracionPorNombre(categoria) {
   text-shadow: 0 1px 4px rgba(0,0,0,0.3);
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
+.transicion-viva {
+  position: relative;
+  height: 180px;
+  background: radial-gradient(circle at center, #eaf1ff, #dce5f8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.frase-viva {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #4a5c7a;
+  text-shadow: 0 1px 3px rgba(255,255,255,0.6);
+  position: relative;
+  z-index: 2;
+}
+
+canvas#particulas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
