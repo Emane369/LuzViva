@@ -3,12 +3,12 @@ let oracionSeleccionada = 'padre_nuestro';
 
 const traducciones = {
   es: {
-    bienvenida: "",
+    bienvenida: "Un espacio para orar y contemplar",
     titulo_versiculo: "📜 Versículo del Día",
     titulo_oracion: "🙏 Oración del Día"
   },
   en: {
-    bienvenida: "",
+    bienvenida: "A sanctuary for prayer and reflection",
     titulo_versiculo: "📜 Verse of the Day",
     titulo_oracion: "🙏 Prayer of the Day"
   }
