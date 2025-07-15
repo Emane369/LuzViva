@@ -6,12 +6,6 @@ body {
   padding: 0;
 }
 
-header {
-  background: #e6e2d8;
-  text-align: center;
-  padding: 40px 20px;
-}
-
 .idioma-selector button {
   margin: 5px;
   padding: 8px 16px;
